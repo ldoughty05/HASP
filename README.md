@@ -9,7 +9,7 @@ Code for UNL Aerospace Club: Experimental Payloads team for 2025 HASP project.
 # Installation
 
 
-1. Clone this repository and `cd` into the root folder (the one with platform.ini)
+1. Clone this repository and `cd` into the root folder (the one with platformio.ini)
 
 ```bash
 $ git clone git@github.com:ldoughty05/HASP.git
