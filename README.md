@@ -6,7 +6,12 @@ Code for UNL Aerospace Club: Experimental Payloads team for 2025 HASP project.
 
 # Features
 
+## System Design Diagram
 ![HASP Diagram drawio](https://github.com/user-attachments/assets/b7cc3aaa-40f1-4374-83f3-61da70cf7a4b)
+
+## Teensy4.1 Pinout
+![HASP_Teensy4 1](https://github.com/user-attachments/assets/e6e19363-a7d2-4f59-abcb-4d0781e4fa9a)
+
 
 # Installation
 
