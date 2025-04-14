@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "thermometer.h": "c"
+    "thermometer.h": "c",
+    "atomic": "cpp"
   }
 }

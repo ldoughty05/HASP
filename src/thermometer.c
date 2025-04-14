@@ -14,15 +14,22 @@ Purp:   Takes analog readings from MCP9700A temperature sensors and
   NOT IMPLEMENTED. No need.
 */
 void setupTemperatureSensors() {};
-
+int temperatureSensorRegisters[NUM_TEMP_SENSORS] = {TEMP1, TEMP2, TEMP3, TEMP4, TEMP5, TEMP6, TEMP7, TEMP8};
 
 void updateTemperaturesArray(double *temperaturesCelsius, int size) {
   for (int i = 0; i < size; i++) { // For each temperature sensor:
-    int temperatureReading = analogRead(TEMP1 + i); // range [0, 1023]
+    int temperatureReading = analogRead(temperatureSensorRegisters[i]); // range [0, 1023]
     float temperatureVoltage = (temperatureReading * 3.3) / 1023.0; // [0, 3.3V]
     temperaturesCelsius[i] = (temperatureVoltage - 0.5) * 100.0; // (Vout - <V at 0°C>) * <1 / Temp Coeff> = Ambient Temp
   }
 }
+/*
+  Overload where size is not included. Defaults 'size' to NUM_TEMP_SENSORS.
+*/
+void updateTemperaturesArray(double *temperaturesCelsius) {
+  updateTemperaturesArray(temperaturesCelsius, NUM_TEMP_SENSORS);
+}
+
 
 /* Analog Pins 
   ADC library exists. Processes up to 10 bits resolution.
