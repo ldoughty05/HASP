@@ -1,6 +1,6 @@
 # HASP 2025
 
-Code for UNL Aerospace Club: Experimental Payloads team for 2025 HASP project.
+Code for UNL Aerospace Club: Experimental Payloads team for 2025 HASP project. This code is for the Teensy which takes in readings from the main flight computer as well as a thermometer and saves them to a micro SD card with a timestamp.
 
 **Relevant repos including BRS1 repository:** https://github.com/Big-Red-Sat
 
@@ -8,7 +8,7 @@ Code for UNL Aerospace Club: Experimental Payloads team for 2025 HASP project.
 
 ## System Design Diagram
 <img width="2214" alt="HighLevelPayloadSchematic" src="https://github.com/user-attachments/assets/be3a02c5-fe89-4a26-8082-0fc425279476" />
-
+Note: This repository is responsible for the "Teensy" section of this diagram.
 
 ## Peripheral Computer Pinout (Teensy4.1)
 ![HASP_Teensy4 1](https://github.com/user-attachments/assets/e6e19363-a7d2-4f59-abcb-4d0781e4fa9a)
