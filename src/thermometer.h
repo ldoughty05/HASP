@@ -7,6 +7,7 @@ UNL AerospaceExperimental Payloads Team
 Purp:   Takes analog readings from MCP9700A temperature sensors and
         converts them to Celsius.
 --------------------------------------------------------------------*/
+// NOTE: labels on pcb are wrong. The labels on the schematic are correct.
 #define TEMP1 A10 // Teensy pin 24
 #define TEMP2 A11 // Teensy pin 25
 #define TEMP3 A12 // Teensy pin 26
