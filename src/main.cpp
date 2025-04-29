@@ -19,7 +19,6 @@ Purp:   Main file for the Teensy4.1 which is responsible for taking a
 #define MODULE2_CURRENT 5
 #define MODULE2_VOLTAGE 4
 
-#define UART_BUFFER_SIZE 64 // Size of the UART buffer
 #define DATA_FILE_NAME_BASE "HASP_data" // gets a random number and .txt appended.
 #define RANDOM_SEED_PIN A0 // Pin used for random seed generation. Value is very volatile since it isn't connected to anything.
 
@@ -33,7 +32,6 @@ typedef struct {
 } PayloadPacket;
 
 PayloadPacket payloadReadings;
-char UARTBuffer[UART_BUFFER_SIZE]; 
 File dataFile;
 
 
